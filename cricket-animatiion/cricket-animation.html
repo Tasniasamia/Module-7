@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cricket{
+            height: 700px;
+            width: 600px;
+           
+            position: relative;
+        }
+        .bat {
+             
+            transition:transform 0.2s ease-in  ;
+  
+}
+.cricket:hover .bat{
+   transform: rotate(-65deg);
+   transform-origin: top right;
+}
+.cricket:hover .ball{
+    transform: translate(400px,-200px);
+}
+.ball {
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 70%;
+	left: 701px;
+    transition:transform 0.2s ease-out 0.3s ;
+}
+    </style>
+</head>
+<body>
+    <div class="cricket">
+    <img src="bat.png"class="bat" alt="bat">
+    <div class="ball">
+
+    </div>
+</div>
+
+</body>
+</html>
